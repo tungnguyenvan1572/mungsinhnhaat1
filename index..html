@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Mừng Sinh Nhật!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="moon"></div>
+    
+    <!-- Trang chính -->
+    <div class="page" id="mainPage">
+        <h1>Chúc Mừng Sinh Nhật!</h1>
+        <p class="subtitle">Happy 22nd birthday, Thị Ngân!</p>
+        
+        <div class="story">
+            <p>Ôi quà !!!  Mỗi hộp quà chứa đựng một lời chúc chân thành từ tôi. Hãy mở chúng ra nhé! P/s : Bấm góc dưới bên phải để mở nhạc nha ! </p>
+        </div>
+        
+        <div class="gift-container" id="giftContainer">
+            <!-- Các hộp quà sẽ được thêm bằng JavaScript -->
+        </div>
+        
+        <button class="candle-btn" id="showPhotoBtn">Xem Ảnh Đặc Biệt</button>
+    </div>
+    
+    <!-- Trang ảnh -->
+    <div class="page photo-page" id="photoPage">
+        <h1>Những Khoảnh Khắc Đáng Nhớ</h1>
+        <h2>Hãy bấm vào ảnh để xem lời nhắn </h2>
+        
+        <div class="slider-container">
+            <div class="slider-track" id="sliderTrack">
+                <!-- Các ảnh sẽ được thêm bằng JavaScript -->
+            </div>
+            
+            <button class="slider-btn" id="prevBtn">❮</button>
+            <button class="slider-btn" id="nextBtn">❯</button>
+        </div>
+        
+        <div class="slider-nav" id="sliderNav">
+            <!-- Các chấm điều hướng sẽ được thêm bằng JavaScript -->
+        </div>
+        
+        <button class="back-btn" id="backBtn">Quay Lại</button>
+    </div>
+    
+    <div class="music-control" id="musicControl">🎵</div>
+    
+    <audio id="bgMusic" loop>
+        <source src="music\happy-birthday-Bg.mp3" type="audio/mpeg">
+    </audio>
+    
+    <audio id="giftSound">
+        <source src="music\ding-small-bell-sfx-233008.mp3" type="audio/mpeg">
+    </audio>
+    
+    <audio id="confettiSound">
+        <source src="music\fireworkblast-106275.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
